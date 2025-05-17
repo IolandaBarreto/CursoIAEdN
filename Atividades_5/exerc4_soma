@@ -1,0 +1,22 @@
+'''4 - Crie uma função que recebe dois números e retorna a soma. O programa deve pedir os números ao usuário, chamar a função e exibir o resultado.'''
+
+
+def soma(num1, num2):
+    # Função que recebe dois números e retorna a soma deles
+    return num1 + num2
+
+# Programa principal
+try:
+    # Pede para o usuário digitar o primeiro número
+    n1 = float(input("Digite o primeiro número: "))
+    # Pede para o usuário digitar o segundo número
+    n2 = float(input("Digite o segundo número: "))
+    
+    # Chama a função soma e armazena o resultado
+    resultado = soma(n1, n2)
+    
+    # Exibe o resultado da soma
+    print(f"A soma de {n1} e {n2} é {resultado}")
+except ValueError:
+    # Caso o usuário digite algo que não seja número, exibe mensagem de erro
+    print("Por favor, digite apenas números válidos.")
